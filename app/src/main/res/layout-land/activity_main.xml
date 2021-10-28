@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9B9B9B"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="605dp"
+        android:layout_height="298dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:stretchColumns="*"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cuadrito">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/A"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_span="1"
+                android:layout_weight="1"
+                android:background="@android:color/holo_red_light"
+                android:onClick="numLetra"
+                android:text="A"
+                android:textColor="#171717"
+                android:textSize="24sp"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/botonbinario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#9C27B0"
+                android:onClick="binary"
+                android:text="BI"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#171717"
+                android:textSize="24sp"
+                android:textStyle="bold|italic" />
+
+            <Button
+                android:id="@+id/botondecimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#9C27B0"
+                android:enabled="false"
+                android:onClick="decimal"
+                android:text="DEC"
+                android:textColor="#171717"
+                android:textSize="24sp"
+                android:textStyle="bold|italic" />
+
+            <Button
+                android:id="@+id/botonhexadecimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#9C27B0"
+                android:onClick="hexa"
+                android:text="HEX"
+                android:textColor="#171717"
+                android:textSize="24sp"
+                android:textStyle="bold|italic" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/B"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/holo_red_light"
+                android:clickable="false"
+                android:onClick="numLetra"
+                android:text="B"
+                android:textColor="#171717"
+                android:textSize="24sp"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/bot7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/holo_red_light"
+                android:clickable="true"
+                android:fontFamily="sans-serif-smallcaps"
+                android:onClick="landNum"
+                android:text="7"
+                android:textColor="#171717"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/bot8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/holo_red_light"
+                android:clickable="true"
+                android:fontFamily="sans-serif-smallcaps"
+                android:onClick="landNum"
+                android:text="8"
+                android:textColor="#171717"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/bot9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/holo_red_light"
+                android:clickable="true"
+                android:fontFamily="sans-serif-smallcaps"
+                android:onClick="landNum"
+                android:text="9"
+                android:textColor="#171717"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/botonsuma"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:clickable="true"
+                android:onClick="landOperator"
+                android:text="+"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#171717" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/C"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_red_light"
+                android:clickable="false"
+                android:onClick="numLetra"
+                android:text="C"
+                android:textColor="#171717"
+                android:textSize="24sp"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/bot4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/holo_red_light"
+                android:clickable="true"
+                android:fontFamily="sans-serif-smallcaps"
+                android:onClick="landNum"
+                android:text="4"
+                android:textColor="#171717"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/bot5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/holo_red_light"
+                android:clickable="true"
+                android:fontFamily="sans-serif-smallcaps"
+                android:onClick="landNum"
+                android:text="5"
+                android:textColor="#171717"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/bot6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/holo_red_light"
+                android:clickable="true"
+                android:fontFamily="sans-serif-smallcaps"
+                android:onClick="landNum"
+                android:text="6"
+                android:textColor="#171717"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/botonresta"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:clickable="true"
+                android:onClick="landOperator"
+                android:text="-"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#171717" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/D"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/holo_red_light"
+                android:clickable="false"
+                android:onClick="numLetra"
+                android:text="D"
+                android:textColor="#171717"
+                android:textSize="24sp"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/bot1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/holo_red_light"
+                android:clickable="true"
+                android:fontFamily="sans-serif-smallcaps"
+                android:onClick="landNum"
+                android:text="1"
+                android:textColor="#171717"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/bot2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/holo_red_light"
+                android:clickable="true"
+                android:fontFamily="sans-serif-smallcaps"
+                android:onClick="landNum"
+                android:text="2"
+                android:textColor="#171717"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/bot3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/holo_red_light"
+                android:clickable="true"
+                android:fontFamily="sans-serif-smallcaps"
+                android:onClick="landNum"
+                android:text="3"
+                android:textColor="#171717"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/botonmulti"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:clickable="true"
+                android:onClick="landOperator"
+                android:text="x"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#171717" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/E"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_red_light"
+                android:clickable="false"
+                android:onClick="numLetra"
+                android:text="E"
+                android:textColor="#171717"
+                android:textSize="24sp"
+                android:visibility="invisible" />
+
+            <ImageButton
+                android:id="@+id/botonborrar"
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:clickable="true"
+                android:onClick="deleteLastLand"
+                android:tint="#171717"
+                app:srcCompat="@android:drawable/ic_input_delete" />
+
+            <Button
+                android:id="@+id/bot0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/holo_red_light"
+                android:clickable="true"
+                android:fontFamily="sans-serif-smallcaps"
+                android:onClick="landNum"
+                android:text="0"
+                android:textColor="#171717"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/botonigual"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:clickable="true"
+                android:onClick="landEqual"
+                android:text="="
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#171717" />
+
+            <Button
+                android:id="@+id/botondivi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:clickable="true"
+                android:onClick="landOperator"
+                android:text="/"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#171717" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/F"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/holo_red_light"
+                android:clickable="false"
+                android:onClick="numLetra"
+                android:text="F"
+                android:textColor="#171717"
+                android:textSize="24sp"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/botonborrartodo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:onClick="resetAllLand"
+                android:text="C"
+                android:textColor="#171717"
+                android:textSize="30sp"
+                android:textStyle="bold|italic" />
+
+            <Button
+                android:id="@+id/botoncoma"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/round_shape"
+                android:onClick="landNum"
+                android:text=","
+                android:textColor="#171717"
+                android:textSize="24sp"
+                android:visibility="invisible" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/cuadrito"
+        android:layout_width="608dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="#FFFF00"
+        android:gravity="end"
+        android:hint="0"
+        android:textAlignment="textEnd"
+        android:textColor="#308FDA"
+        android:textColorHint="#308FDA"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
